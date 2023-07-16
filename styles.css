@@ -11,7 +11,7 @@ body {
   overflow-x: hidden;
 }
 
-.wrapper , .Portfolio {
+.wrapper  {
     width: 100vw;
     height: 100vh;
     background-color: #191c32;
@@ -151,6 +151,12 @@ span {
     align-items:left ;
     
 }
+.Portfolio {
+    width: 100vw;
+    background-color: #191c32;
+    color: white;
+
+}
 
 .portfolio-headings {
     width: 100vw;
@@ -171,23 +177,33 @@ span {
 }
 .card {
     width: 300px;
+    height: 350px;
+    color: #fff;
+    background-color: rgb(6, 25, 68);
+    margin: 1em;
+
     
 }
 
 .card__img {
-    width: 100%;
+    width: 300px;
     height: 150px;
+    justify-items: center;
+    margin-bottom: 1em;
     background-image: url(assets/2-original.png);
     background-size: cover;
+    
 }
 
 .card__title {
-padding: 20px;
-margin: 0 auto
+padding: 3px;
+margin: 0 auto;
+text-align: center;
+
 
 }
 .card__title h2 {
-    margin-top: 5.5em;
+    margin: top 0.1em;
 }
 
 
@@ -213,7 +229,7 @@ margin: 0 auto
     align-self: center;
     justify-content: center;
     margin: 1em;
-    margin-top: 8em;
+    margin-top: 1em;
     width: 70%;
     text-align: center;
    
@@ -231,3 +247,4 @@ margin: 0 auto
     margin-top: 1em;
 
 }
+
