@@ -1,20 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
 
 * {
+  flex-basis: 0;
+  flex-grow: 999;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
+  
 }
 
 body {
+   
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
 }
 
 .wrapper  {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 60%;
+    background-color: #191c32;
     width: 100vw;
     height: 100vh;
-    background-color: #191c32;
+    
     color: white;
 } 
 
@@ -60,6 +68,9 @@ body {
 }
 
 .main {
+    background-color: #191c32;
+    flex-basis: 20rem;
+    flex-grow: 1;
     margin: 0 auto;
     width: 80vw;
     height:80vh;
@@ -88,7 +99,7 @@ span {
     background-color: aqua;
     border: none;
     border-radius: 20px;
-    margin: 10px;
+    margin-bottom: 10px;
     cursor: pointer;
     box-shadow: 1px 3px 11px 1px rgba(102, 231,200 , 69);
 }
@@ -105,8 +116,13 @@ span {
     height: 520px;
 }
 
+.info-content p {
+    background-color: #191c32;
+}
 .about {
     display:grid;
+    background-color: #fff;
+    color: #fff;
     grid-template-columns: repeat(10, 1fr);
     width: 100vw;
     align-items: center;
@@ -123,11 +139,14 @@ span {
     grid-column: 1/5;
 }
 
-.about-info {
+.about-info, p {
+    background-color: #fff;
+    color: #191c32;
     grid-column: 5/10;
     padding: 3em;
 }
 .about-info h2 {
+    background-color: #fff;
     font-size: 2em;
     color: #191c32;
 }
@@ -353,3 +372,4 @@ text-align: center;
     margin-top: 1em;
 
 }
+
